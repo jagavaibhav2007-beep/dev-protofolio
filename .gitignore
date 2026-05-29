@@ -1,0 +1,24 @@
+# Folders excluded per project config
+MyAgents/
+components/
+avartar/
+
+# Environment files — never commit secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Dependencies
+node_modules/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
