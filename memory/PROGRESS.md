@@ -12,16 +12,18 @@
 - DONE: User avatar copied to `public/avatar.png`.
 - DONE: `npm run lint` passes.
 - DONE: `npm run build` passes.
-- NOT STARTED: Global design system implementation.
+- DONE: Phase 2 global design system implemented in `src/app/globals.css`.
 - NOT STARTED: Navbar, hero, about, projects, and skills sections.
 - NOT STARTED: Responsive visual QA against `template.png`.
 
 ## Resume
-File: `plan.md:L29`
-Next: Start Phase 2 by implementing global design tokens and reusable CSS utilities from `style.md`.
+File: `plan.md:L56`
+Next: Start Phase 3 by creating `src/data/portfolio.ts` and shared primitives for buttons, section headers, tech icons, and glass panels.
 Blocked: nothing
 
 ## Session History
+2026-05-29 - Reviewed and refactored Phase 2 edited files; added `#phase-2` anchor target and CSS section comments for maintainability.
+2026-05-29 - Completed Phase 2 global design system: CSS tokens, glass panels, buttons, typography helpers, hover states, motion helpers, and preview page.
 2026-05-29 - Fixed localhost runtime overlay by restarting stale Next dev server after `.next` asset drift; verified browser console clean.
 2026-05-29 - Refactored Phase 1 scaffold for readability by extracting site config and naming root page/layout constants.
 2026-05-29 - Completed Phase 1: scaffolded Next.js App Router, installed dependencies, copied avatar to `public/avatar.png`, and verified lint/build.

@@ -2,6 +2,13 @@
 > Updated: 2026-05-29
 
 ---
+**2026-05-29 - ADDED - Global CSS design system**
+What: Added Phase 2 design tokens, global background, glass panel styles, buttons, typography helpers, pills, badges, motion helpers, and responsive layout utilities in `src/app/globals.css`.
+Why: The portfolio needs a stable visual foundation from `style.md` before section components are built.
+Impact: Future components should reuse these global classes instead of redefining token-level CSS.
+⛔ DO NOT: Recreate button, glass panel, section typography, pill, badge, or float animation styles locally inside section components.
+
+---
 **2026-05-29 - CHANGED - Site metadata source**
 What: Moved site name and description into `src/lib/site.ts` and reused it from the root layout metadata.
 Why: Centralizing site-level copy makes the scaffold easier to understand and safer to edit in future phases.

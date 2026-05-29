@@ -22,6 +22,8 @@
 
 ## Styling
 - Tailwind CSS is loaded from `src/app/globals.css`; visual tokens and effects are documented in `style.md`.
+- Global design tokens, shared utility classes, button styles, glass panels, and motion helpers live in `src/app/globals.css`.
 
 ## Testing
 - Run `npm run lint` and `npm run build` before marking an implementation phase complete.
+- After browser QA screenshots, remove temporary `.playwright-mcp/` and screenshot artifacts before handoff.
