@@ -1,5 +1,5 @@
 # Folders excluded per project config
-MyAgents/
+my-agent-skills/
 components/
 avartar/
 
@@ -12,6 +12,15 @@ avartar/
 
 # Dependencies
 node_modules/
+
+# Next.js generated output
+.next/
+out/
+
+# Local QA / browser tooling scratch
+.playwright-mcp/
+playwright-report/
+test-results/
 
 # OS artifacts
 .DS_Store
