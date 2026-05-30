@@ -7,13 +7,9 @@ import { TechIcon } from "@/components/ui/TechIcon";
 import { portfolioData } from "@/data/portfolio";
 import type { AboutFeature, Skill, TechItem } from "@/types/portfolio";
 
-const portfolioCanvasClassName = "min-h-screen pb-14 sm:pb-20";
-const portfolioCanvasLabel = "Portfolio canvas";
-const previewTags = portfolioData.projects.items[0]?.tags ?? [];
-
 export default function Home() {
   return (
-    <main className={portfolioCanvasClassName} aria-label={portfolioCanvasLabel}>
+    <main aria-label="Portfolio canvas" className="min-h-screen pb-14 sm:pb-20">
       <Navbar />
       <section className="section" id="home">
         <div className="container">
@@ -38,9 +34,9 @@ function PreviewHeader() {
   return (
     <SectionHeader
       className="mb-8"
-      description="Shared data, buttons, section headers, glass surfaces, and technology icons are ready for the real sections."
-      kicker="Shared Primitives"
-      title="Phase 3 Component Foundation"
+      description="The navbar and shared primitives are in place, so the next step can focus on the real hero section instead of setup work."
+      kicker="Phase 4 Complete"
+      title="Ready For Hero Build"
     />
   );
 }
@@ -89,13 +85,15 @@ function TechRail({ items }: { items: TechItem[] }) {
 }
 
 function AboutPreview({ features }: { features: AboutFeature[] }) {
+  const { about } = portfolioData;
+
   return (
     <GlassPanel className="p-6">
       <SectionHeader
         className="mb-5"
-        description={portfolioData.about.body}
-        kicker={portfolioData.about.kicker}
-        title={portfolioData.about.heading}
+        description={about.body}
+        kicker={about.kicker}
+        title={about.heading}
       />
       <div className="grid gap-4 sm:grid-cols-3">
         {features.map((feature) => (
@@ -116,6 +114,8 @@ function FeatureTile({ feature }: { feature: AboutFeature }) {
 }
 
 function ProjectPreview() {
+  const featuredProject = portfolioData.projects.items[0];
+
   return (
     <GlassPanel className="p-6">
       <div className="mb-4 flex items-center justify-between gap-4">
@@ -126,7 +126,7 @@ function ProjectPreview() {
         <span className="badge-featured">Featured</span>
       </div>
 
-      <TagList items={previewTags} />
+      <TagList items={featuredProject?.tags ?? []} />
       <SkillPreviewGrid items={portfolioData.skills.items} />
     </GlassPanel>
   );

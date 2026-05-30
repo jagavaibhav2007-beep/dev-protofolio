@@ -27,6 +27,7 @@
 - Shared surface and action patterns should flow through `GlassPanel` and `Button` before adding section-local wrappers.
 - `Button` is currently an anchor-style CTA primitive; use native `<button>` directly later if a real form or client interaction needs one.
 - Navbar styles live as explicit semantic classes in `src/app/globals.css` because newly added untracked component-only Tailwind utilities did not reliably emit during local QA.
+- Navbar active-link styling is derived in `src/components/Navbar.tsx` from link targets instead of being stored in shared data.
 
 ## Testing
 - Run `npm run lint` and `npm run build` before marking an implementation phase complete.

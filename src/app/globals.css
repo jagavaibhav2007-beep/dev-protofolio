@@ -392,42 +392,6 @@ svg {
   animation-delay: -1.6s;
 }
 
-.icon-react {
-  color: #00d8ff;
-}
-
-.icon-next {
-  color: #fff;
-}
-
-.icon-node {
-  color: #39ff14;
-}
-
-.icon-ts {
-  color: #3178c6;
-}
-
-.icon-mongo {
-  color: var(--green);
-}
-
-.icon-tailwind {
-  color: #38bdf8;
-}
-
-.icon-postgres {
-  color: #336791;
-}
-
-.icon-git {
-  color: #f05032;
-}
-
-.icon-docker {
-  color: #2496ed;
-}
-
 /* Motion helpers. */
 @keyframes floatSoft {
   0%,

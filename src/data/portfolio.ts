@@ -2,7 +2,7 @@ import type { PortfolioData } from "@/types/portfolio";
 
 export const portfolioData: PortfolioData = {
   navLinks: [
-    { href: "#home", isActive: true, label: "Home" },
+    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },

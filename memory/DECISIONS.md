@@ -2,6 +2,13 @@
 > Updated: 2026-05-30
 
 ---
+**2026-05-30 - CHANGED - Navbar active state stays in component logic**
+What: Removed `isActive` from `src/data/portfolio.ts` nav items and now derive the current highlighted link inside `src/components/Navbar.tsx`.
+Why: Active styling is presentation state, and keeping it out of shared content makes the portfolio data cleaner for later sections and future nav behavior changes.
+Impact: Future navbar behavior should compute active state from route/section context rather than storing UI flags in `portfolioData`.
+DO NOT: Reintroduce presentation-only fields like `isActive` into the shared content model when the navbar can derive them locally.
+
+---
 **2026-05-30 - ADDED - Phase 4 navbar**
 What: Added `src/components/Navbar.tsx` with the `DevPortfolio` logo, desktop nav links, active Home indicator, `Let's Talk` CTA, and a toggled mobile link panel.
 Why: Phase 4 requires the navbar from the extracted component spec before building the hero section.

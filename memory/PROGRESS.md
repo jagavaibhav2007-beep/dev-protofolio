@@ -24,6 +24,8 @@ Next: Start Phase 5 by building `src/components/Hero.tsx` for the left hero colu
 Blocked: nothing
 
 ## Session History
+2026-05-30 - Simplified the Phase 4 shell for Phase 5: removed `isActive` from shared nav data, consolidated navbar link rendering, refreshed the page handoff copy, and trimmed unused icon CSS.
+2026-05-30 - Verified the Phase 4 simplification with fresh `npm run lint`, `npm run build`, dev server restart on `http://localhost:3000`, and a Playwright snapshot showing the updated live page.
 2026-05-30 - Completed Phase 4 navbar: added `src/components/Navbar.tsx`, wired it into `src/app/page.tsx`, and added explicit navbar/mobile styles in `src/app/globals.css`.
 2026-05-30 - Verified Phase 4 with `npm run lint`, clean `npm run build`, and Playwright MCP desktop/mobile checks. Desktop nav links render with active Home state; mobile menu opens and has no horizontal overflow.
 2026-05-30 - Fixed `.gitignore` from `components/` to `/components/` so app source under `src/components/` is no longer ignored while the root reference folder remains ignored.

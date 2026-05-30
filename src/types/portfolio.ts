@@ -12,7 +12,6 @@ export type BrandIconSlug =
 
 export type NavLink = {
   href: string;
-  isActive?: boolean;
   label: string;
 };
 
