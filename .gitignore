@@ -1,6 +1,6 @@
 # Folders excluded per project config
 my-agent-skills/
-components/
+/components/
 avartar/
 
 # Environment files — never commit secrets

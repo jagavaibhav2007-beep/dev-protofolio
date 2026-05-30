@@ -1,5 +1,19 @@
 # DECISIONS - Premium Portfolio
-> Updated: 2026-05-29
+> Updated: 2026-05-30
+
+---
+**2026-05-30 - ADDED - Phase 4 navbar**
+What: Added `src/components/Navbar.tsx` with the `DevPortfolio` logo, desktop nav links, active Home indicator, `Let's Talk` CTA, and a toggled mobile link panel.
+Why: Phase 4 requires the navbar from the extracted component spec before building the hero section.
+Impact: The root page now starts with the navbar and uses `#home` as the current page anchor. Future sections should add matching `#about`, `#skills`, `#projects`, `#experience`, and `#contact` targets.
+DO NOT: Replace the navbar with pasted image assets from `components/images/`; keep it as responsive coded UI.
+
+---
+**2026-05-30 - ADDED - Phase 3 shared data and UI primitives**
+What: Added `src/data/portfolio.ts` for nav, hero, about, projects, and skills content plus reusable `Button`, `GlassPanel`, `SectionHeader`, and `TechIcon` primitives.
+Why: Later phases need a stable content source and shared presentation building blocks before section-by-section implementation begins.
+Impact: Navbar, hero, about, projects, and skills should read from the shared portfolio data and compose the UI primitives instead of duplicating literals or low-level styles.
+DO NOT: Hardcode section copy or recreate button, glass panel, or brand icon rendering ad hoc inside future section components.
 
 ---
 **2026-05-29 - ADDED - Global CSS design system**
